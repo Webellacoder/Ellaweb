@@ -1,0 +1,58 @@
+
+.container {
+  flex-basis: 44%;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Added to stack items vertically */
+  width: 30%;
+  margin: auto;
+  margin-top: 80px;
+  transition: 0.5s;
+  }
+  
+  .container:hover {
+  background-color: rgb(196, 191, 186);
+  }
+  
+  img {
+  height: 100px; /* Adjusted height */
+  margin: 20px 0; /* Adjusted margin */
+  border-radius: 50%;
+  }
+  
+  .job, .info {
+  padding: 0;
+  text-align: center;
+  }
+  
+  h1 {
+  margin-top: 5px;
+  text-align: center;
+  margin: 0 50px; /* Simplified margin */
+  }
+  
+  
+.containe .fa {
+  color: #f44336;
+  display: inline-block; /* Changed to inline-block */
+  margin: 0 5px; /* Adjusted margin for spacing */
+  font-size: 20px; /* Added for better visibility */
+  }
+
+  .random-btn{
+border: none;
+font-size: 30px;
+background-color: rgb(228, 220, 211);
+border-radius: 5px;
+cursor: pointer;
+  }
+
+  .random-btn:hover{
+background-color: #eb857e;
+  }

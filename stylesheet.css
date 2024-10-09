@@ -1,0 +1,35 @@
+section#colour-display{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:200px auto ;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    padding: 50px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+section#colour-display:hover{
+background-color: rgb(230, 226, 222);
+}
+
+section#colour-display h1{
+    font-weight: 900;
+}
+
+section#colour-display #new-colour-button{
+    width: 100%;
+    background-color:whitesmoke;
+    color: black;
+    font-weight: 900;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+section#colour-display #new-colour-button:hover{
+    background-color: black;
+    color: aliceblue;
+}
+

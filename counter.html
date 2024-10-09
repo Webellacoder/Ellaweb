@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+<title>Notre Dame Website Deasign</title>
+<link rel="stylesheet" type="text/css" href="index stylesheet.css">
+</head>
+<body>
+
+
+<label id="countLabel">0</label><br>
+
+<div id="btnContainer">
+<button id="decreaseBtn" class="buttons">decrease</button>
+<button id="resetBtn" class="buttons" >reset</button>
+<button id="increaseBtn"class="buttons" >increase</button>
+</div>
+
+<p1 id="myP1"></p1><br><br>
+<p2 id="myP2"></p2><br><br>
+<p3 id="myP3"></p3><br><br>
+
+
+<script>
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countLabel = document.getElementById("countLabel");
+
+let count = 0;
+increaseBtn.onclick = function(){
+    count++;
+    countLabel.textContent = count;
+}
+
+
+decreaseBtn.onclick = function(){
+    count--;
+    countLabel.textContent = count;
+}
+
+
+resetBtn.onclick = function(){
+    count = 0;
+    countLabel.textContent = count;
+}
+
+let fullName = "ella";
+let age = 25;
+
+
+document.getElementById("myP1").textContent = `your name is ${fullName}`;
+document.getElementById("myP2").textContent = `you are ${age} years old`;
+
+ for(let i = 2; i<=10; i+=2){
+    console.log(i);
+ }
+
+ const email = "ella@gmail.com";
+
+ let username = email.slice(0, email.indexOf("@"));
+ let extention = email.slice(email.indexOf("@")+1);
+
+ console.log(username);
+ console.log(extention);
+
+ let day = 5;
+ switch(day){
+ case 1:
+ console.log("It is monday");
+ break;
+ case 2:
+console.log("It is Tuesday");
+break;
+case 3:
+console.log("It is Wednesday");
+break;
+case 4:
+console.log("It is Thursday");
+break;
+
+case 5:
+console.log("It is friday");
+break;
+case 6:
+console.log("It is Satuday");
+break;
+case 7:
+console.log("It is Sunday");
+break;
+default:
+    console.log(`${day} is not a day`);
+ }
+
+ let x;
+ let y;
+ let z;
+ x = Number(x);
+ y = String(y);
+ z = Boolean(z)
+
+ console.log(x, typeof x);
+  console.log(y, typeof y);
+ console.log(z, typeof z);
+
+
+ const students = ["spongebob","patrick","tony"];
+ const studentsUpper = students.map(upperCase);
+
+ console.log(studentsUpper);
+
+ function upperCase(element){
+    return element.toUpperCase();
+ }
+
+
+
+ const dates = ["2024-1-10","2023-1-10","2022-2-12"];
+ const formattedDates = dates.map(formatDates);
+
+console.log(formattedDates);
+
+function formatDates(element){
+    const parts = element.split("-");
+    return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+
+ 
+</script>
+
+</body>
+</html>
